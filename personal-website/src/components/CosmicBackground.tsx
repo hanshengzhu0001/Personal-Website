@@ -30,8 +30,8 @@ const CosmicBackground = () => {
       color: string;
 
       constructor() {
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height;
+        this.x = Math.random() * (canvas?.width ?? 0);
+        this.y = Math.random() * (canvas?.height ?? 0);
         this.size = Math.random() * 2;
         this.speed = Math.random() * 0.5;
         this.brightness = Math.random();
@@ -39,10 +39,11 @@ const CosmicBackground = () => {
       }
 
       update() {
+        if (!canvas) return;
         this.y += this.speed;
         if (this.y > canvas.height) {
           this.y = 0;
-          this.x = Math.random() * canvas.width;
+          this.x = Math.random() * (canvas.width ?? 0);
         }
       }
 

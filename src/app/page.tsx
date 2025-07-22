@@ -1,0 +1,151 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import { EnvelopeIcon, PhoneIcon, GlobeAltIcon } from '@heroicons/react/24/outline';
+
+export default function Home() {
+  return (
+    <main className="min-h-screen">
+      {/* Hero Section */}
+      <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-gray-800">
+        <div className="container mx-auto px-4 py-16 text-center">
+          <motion.h1 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="text-5xl font-bold mb-4"
+          >
+            Hansheng Zhu
+          </motion.h1>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="text-xl text-gray-600 dark:text-gray-300 mb-8"
+          >
+            AI Engineer & Researcher at UPenn
+          </motion.p>
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="flex justify-center space-x-6"
+          >
+            <a href="mailto:hanszhu@seas.upenn.edu" className="flex items-center space-x-2 hover:text-blue-600">
+              <EnvelopeIcon className="h-5 w-5" />
+              <span>hanszhu@seas.upenn.edu</span>
+            </a>
+            <a href="tel:+14458005280" className="flex items-center space-x-2 hover:text-blue-600">
+              <PhoneIcon className="h-5 w-5" />
+              <span>(445) 800-5280</span>
+            </a>
+            <a href="https://github.com/hanshengzhu0001" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 hover:text-blue-600">
+              <GlobeAltIcon className="h-5 w-5" />
+              <span>GitHub</span>
+            </a>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Education Section */}
+      <section className="py-20 bg-white dark:bg-gray-900">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8 text-center">Education</h2>
+          <div className="max-w-3xl mx-auto">
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
+              <h3 className="text-xl font-semibold mb-2">University of Pennsylvania</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-2">School of Engineering and Applied Sciences</p>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">Rising Junior • GPA: 3.80</p>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                Candidate for Bachelor of Engineering in Artificial Intelligence
+              </p>
+              <div className="mt-4">
+                <h4 className="font-semibold mb-2">Relevant Coursework:</h4>
+                <p className="text-gray-600 dark:text-gray-300">
+                  Machine Learning, Signal Processing, Data Structures and Algorithms, Stochastic Processes, 
+                  Artificial Intelligence, Machine Perception, Neural Networks, Brain Computer Interface, OOP
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Experience Section */}
+      <section className="py-20 bg-gray-50 dark:bg-gray-800">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8 text-center">Work Experience</h2>
+          <div className="max-w-3xl mx-auto space-y-6">
+            <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg">
+              <h3 className="text-xl font-semibold mb-2">Software Development Intern</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-2">Astoria AI • Jan 2025 - Present</p>
+              <ul className="list-disc list-inside text-gray-600 dark:text-gray-300">
+                <li>Designed and optimized LLM-as-a-Judge evaluation pipeline for conversational AI</li>
+                <li>Built scalable frontend modules for talent management platform</li>
+              </ul>
+            </div>
+            <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg">
+              <h3 className="text-xl font-semibold mb-2">Deep Learning Research Intern</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-2">Thomas Jefferson University Hospital • Oct 2024 - Present</p>
+              <ul className="list-disc list-inside text-gray-600 dark:text-gray-300">
+                <li>Performed image segmentation on digital subtraction angiograms through neural networks</li>
+                <li>Implemented vision transformer to predict risk of capillary abnormalities</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Projects Section */}
+      <section className="py-20 bg-white dark:bg-gray-900">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8 text-center">Technical Projects</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
+              <h3 className="text-xl font-semibold mb-2">Alziaid iOS App</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">Swift, React</p>
+              <p className="text-gray-600 dark:text-gray-300">
+                Led team of 4 to build a patient monitoring app with real-time health alerts; deployed for 100+ beta users.
+              </p>
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
+              <h3 className="text-xl font-semibold mb-2">Plant Disease Detection</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">PyTorch, ResNet</p>
+              <p className="text-gray-600 dark:text-gray-300">
+                Trained CNN model for leaf image classification (95% accuracy); can be integrated into open-source agriculture toolkit.
+              </p>
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
+              <h3 className="text-xl font-semibold mb-2">MedScanner</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">React, AWS, BioBERT</p>
+              <p className="text-gray-600 dark:text-gray-300">
+                Full-stack app for drug dosage search and assistance; optimized AWS Lambda functions to handle 500+ daily queries.
+              </p>
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
+              <h3 className="text-xl font-semibold mb-2">Finger Movement Prediction</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">Python, CuML, scikit-learn</p>
+              <p className="text-gray-600 dark:text-gray-300">
+                Developed a multiscale high-γ/β feature extraction pipeline with GPU-accelerated Random Forests.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Current Research Section */}
+      <section className="py-20 bg-gray-50 dark:bg-gray-800">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8 text-center">Current Research</h2>
+          <div className="max-w-3xl mx-auto">
+            <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg">
+              <p className="text-gray-600 dark:text-gray-300">
+                Working with Professor Chris Callison-Burch on building on MOLMO - a family of open state-of-the-art multimodal AI models - 
+                applying dense audio captioning and combining ViT-based image encoding with LLM-based decoding.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+} 

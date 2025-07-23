@@ -11,9 +11,13 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 20, 20, 20;
+    --background-start-rgb: 17, 24, 39;
+    --background-end-rgb: 31, 41, 55;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -23,11 +27,4 @@ body {
     rgb(var(--background-start-rgb)),
     rgb(var(--background-end-rgb))
   );
-  min-height: 100vh;
-}
-
-@layer base {
-  html {
-    scroll-behavior: smooth;
-  }
-}
+} 

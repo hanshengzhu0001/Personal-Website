@@ -15,6 +15,7 @@ export default function Home() {
       <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-gray-800">
         <div className="container mx-auto px-4 py-16 text-center">
           <AnimatedSection>
+            <img src="/profile_pic.jpeg" alt="Profile" className="mx-auto rounded-full w-40 h-40 object-cover mb-6 shadow-lg" />
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

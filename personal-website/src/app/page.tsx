@@ -71,7 +71,7 @@ export default function Home() {
             <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
                 <h3 className="text-xl font-semibold mb-2">University of Pennsylvania</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-2">School of Engineering and Applied Sciences</p>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">Rising Junior • GPA: 3.80</p>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">Rising Junior • GPA: 3.78</p>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
                   Candidate for Bachelor of Engineering in Artificial Intelligence
                 </p>
@@ -92,6 +92,14 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 text-center">Work Experience</h2>
           <div className="max-w-3xl mx-auto space-y-6">
+            <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg">
+                <h3 className="text-xl font-semibold mb-2">Penn Summer AI Lab Research Assistant</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-2">University of Pennsylvania | May 2025 - Present</p>
+                <ul className="list-disc list-inside text-gray-600 dark:text-gray-300">
+                  <li>Worked with Professor Chris Callison-Burch on designing and training a scientific chart detection model that leverages a Swin Transformer backbone with Mask R-CNN for small, dense data points and 21 other chart elements.</li>
+                  <li>Deployed a Dense Captioning application on Supabase that lets users select detected elements during voiceover - boosting grounding and visual understanding.</li>
+                </ul>
+              </div>
             <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg">
                 <h3 className="text-xl font-semibold mb-2">Software Development Intern</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-2">Astoria AI • Jan 2025 - Present</p>

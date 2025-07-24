@@ -175,34 +175,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* MedScanner Project - New Card */}
-          <div className="max-w-4xl mx-auto mt-10">
-            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg mb-6">
-              <h3 className="text-xl font-semibold mb-2">MedScanner</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">React, AWS, BioBERT</p>
-              <p className="text-gray-600 dark:text-gray-300">
-                Full-stack app for drug dosage search and assistance; optimized AWS Lambda functions to handle 500+ daily queries.
-              </p>
-            </div>
-            <div className="w-full aspect-video mb-10">
-              <iframe className="w-full h-full rounded-lg" src="https://www.youtube.com/embed/yGT6Z07Mi0M?start=2" title="MedScanner Demo" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-            </div>
-          </div>
-
-          {/* Alziaid iOS App Project - New Card */}
-          <div className="max-w-4xl mx-auto mt-10">
-            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg mb-6">
-              <h3 className="text-xl font-semibold mb-2">Alziaid iOS App</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">Swift, React</p>
-              <p className="text-gray-600 dark:text-gray-300">
-                Led team of 4 to build a patient monitoring app with real-time health alerts; deployed for 100+ beta users.
-              </p>
-            </div>
-            <div className="w-full aspect-video mb-10">
-              <iframe className="w-full h-full rounded-lg" src="https://www.youtube.com/embed/vRBCaTu5c3E" title="Alziaid iOS App Demo" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-            </div>
-          </div>
-
           {/* Astoria Career App Project - New Card */}
           <div className="max-w-4xl mx-auto mt-10">
             <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg mb-6">
@@ -214,6 +186,28 @@ export default function Home() {
             </div>
             <div className="w-full aspect-video mb-10">
               <iframe className="w-full h-full rounded-lg" src="https://www.youtube.com/embed/P_kau83ANCE" title="Astoria Career App Demo" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            </div>
+          </div>
+
+          {/* Plant Disease Detection Project - New Card */}
+          <div className="max-w-4xl mx-auto mt-10">
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg mb-6">
+              <h3 className="text-xl font-semibold mb-2">Plant Disease Detection</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">PyTorch, ResNet</p>
+              <p className="text-gray-600 dark:text-gray-300">
+                Trained CNN model for leaf image classification (95% accuracy); can be integrated into open-source agriculture toolkit.
+              </p>
+            </div>
+          </div>
+
+          {/* Finger Movement Prediction Project - New Card */}
+          <div className="max-w-4xl mx-auto mt-10">
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg mb-6">
+              <h3 className="text-xl font-semibold mb-2">Finger Movement Prediction</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">Python, CuML, scikit-learn</p>
+              <p className="text-gray-600 dark:text-gray-300">
+                Developed a multiscale high-γ/β feature extraction pipeline with GPU-accelerated Random Forests.
+              </p>
             </div>
           </div>
         </div>

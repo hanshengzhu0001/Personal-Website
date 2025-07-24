@@ -133,17 +133,18 @@ export default function Home() {
                 </p>
               </div>
             <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
-                <h3 className="text-xl font-semibold mb-2">Plant Disease Detection</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">PyTorch, ResNet</p>
-                <p className="text-gray-600 dark:text-gray-300">
-                  Trained CNN model for leaf image classification (95% accuracy); can be integrated into open-source agriculture toolkit.
-                </p>
-              </div>
-            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
                 <h3 className="text-xl font-semibold mb-2">MedScanner</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">React, AWS, BioBERT</p>
                 <p className="text-gray-600 dark:text-gray-300">
                 Full-stack app for drug dosage search and assistance; optimized AWS Lambda functions to handle 500+ daily queries.
+                </p>
+              </div>
+            
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
+                <h3 className="text-xl font-semibold mb-2">Plant Disease Detection</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">PyTorch, ResNet</p>
+                <p className="text-gray-600 dark:text-gray-300">
+                  Trained CNN model for leaf image classification (95% accuracy); can be integrated into open-source agriculture toolkit.
                 </p>
               </div>
             <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
@@ -166,11 +167,53 @@ export default function Home() {
                 <span className="font-medium">Deployed application enables element selection during voiceover, boosting grounding and visual understanding.</span>
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
               <img src="/demo 1.gif" alt="SciChartVision Demo 1" className="rounded-lg shadow-md" />
               <img src="/demo 2.gif" alt="SciChartVision Demo 2" className="rounded-lg shadow-md" />
               <img src="/demo 3.gif" alt="SciChartVision Demo 3" className="rounded-lg shadow-md" />
               <img src="/demo 4.gif" alt="SciChartVision Demo 4" className="rounded-lg shadow-md" />
+            </div>
+          </div>
+
+          {/* MedScanner Project - New Card */}
+          <div className="max-w-4xl mx-auto mt-10">
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg mb-6">
+              <h3 className="text-xl font-semibold mb-2">MedScanner</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">React, AWS, BioBERT</p>
+              <p className="text-gray-600 dark:text-gray-300">
+                Full-stack app for drug dosage search and assistance; optimized AWS Lambda functions to handle 500+ daily queries.
+              </p>
+            </div>
+            <div className="w-full aspect-video mb-10">
+              <iframe className="w-full h-full rounded-lg" src="https://www.youtube.com/embed/yGT6Z07Mi0M?start=2" title="MedScanner Demo" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            </div>
+          </div>
+
+          {/* Alziaid iOS App Project - New Card */}
+          <div className="max-w-4xl mx-auto mt-10">
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg mb-6">
+              <h3 className="text-xl font-semibold mb-2">Alziaid iOS App</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">Swift, React</p>
+              <p className="text-gray-600 dark:text-gray-300">
+                Led team of 4 to build a patient monitoring app with real-time health alerts; deployed for 100+ beta users.
+              </p>
+            </div>
+            <div className="w-full aspect-video mb-10">
+              <iframe className="w-full h-full rounded-lg" src="https://www.youtube.com/embed/vRBCaTu5c3E" title="Alziaid iOS App Demo" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            </div>
+          </div>
+
+          {/* Astoria Career App Project - New Card */}
+          <div className="max-w-4xl mx-auto mt-10">
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg mb-6">
+              <h3 className="text-xl font-semibold mb-2">Astoria Career App</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">Python, AzureML, Node.js, TypeScript, Docker, RESTful APIs, CI/CD</p>
+              <p className="text-gray-600 dark:text-gray-300">
+                Built a career Q&A and mock-interview platform on Kaggle data by LoRA‑finetuning GPT‑4‑distilled weights into Mistral‑7B on Azure ML. Refined responses with Langfuse structured prompts and delivered a Streamlit frontend.
+              </p>
+            </div>
+            <div className="w-full aspect-video mb-10">
+              <iframe className="w-full h-full rounded-lg" src="https://www.youtube.com/embed/P_kau83ANCE" title="Astoria Career App Demo" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
           </div>
         </div>

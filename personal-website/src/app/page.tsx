@@ -54,6 +54,10 @@ export default function Home() {
                 <GlobeAltIcon className="h-5 w-5" />
                 <span>GitHub</span>
               </a>
+              <a href="https://www.linkedin.com/in/hansheng-zhu" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 hover:text-blue-600">
+                <GlobeAltIcon className="h-5 w-5" />
+                <span>LinkedIn</span>
+              </a>
               <a href="https://huggingface.co/hanszhu" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 hover:text-yellow-500">
                 <img src="/huggingface.svg" alt="Hugging Face" className="h-5 w-5" />
                 <span>Hugging Face</span>
@@ -71,15 +75,20 @@ export default function Home() {
             <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
                 <h3 className="text-xl font-semibold mb-2">University of Pennsylvania</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-2">School of Engineering and Applied Sciences</p>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">Rising Junior • GPA: 3.78</p>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  Candidate for Bachelor of Engineering in Artificial Intelligence
-                </p>
+                <p className="text-gray-600 dark:text-gray-300 mb-2">Aug 2023 - May 2027</p>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">Candidate for Bachelor of Engineering in Computer Science • Cumulative GPA: 3.75</p>
                 <div className="mt-4">
                   <h4 className="font-semibold mb-2">Relevant Coursework:</h4>
                   <p className="text-gray-600 dark:text-gray-300">
-                    Machine Learning, Signal Processing, Data Structures and Algorithms, Stochastic Processes, 
-                    Artificial Intelligence, Machine Perception, Neural Networks, Brain Computer Interface, OOP
+                    Autonomous Robotics, Machine Learning, Signal Processing, Scalable Cloud Computing, Data Structures, 
+                    AI Theory, Algorithms, Stochastic Processes, OOP, Computer Vision, NLP, Linear Algebra, 
+                    Optimization, Computer Systems (C/C++/C#)
+                  </p>
+                </div>
+                <div className="mt-4">
+                  <h4 className="font-semibold mb-2">Campus Involvement:</h4>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    AI@Penn (President), Wharton AI Advisory Board, Penn Enchord Acappella (President), Penn Labs
                   </p>
                 </div>
               </div>
@@ -93,29 +102,74 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-8 text-center">Work Experience</h2>
           <div className="max-w-3xl mx-auto space-y-6">
             <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg">
-                <h3 className="text-xl font-semibold mb-2">Penn Summer AI Lab Research Assistant</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-2">University of Pennsylvania | May 2025 - Present</p>
+                <h3 className="text-xl font-semibold mb-2">Penn Summer AI Lab Backend Engineer</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-2">University of Pennsylvania | May 2025 - Aug 2025</p>
                 <ul className="list-disc list-inside text-gray-600 dark:text-gray-300">
-                  <li>Worked with Professor Chris Callison-Burch on designing and training a scientific chart detection model that leverages a Swin Transformer backbone with Mask R-CNN for small, dense data points and 21 other chart elements.</li>
-                  <li>Deployed a Dense Captioning application on Supabase that lets users select detected elements during voiceover - boosting grounding and visual understanding.</li>
+                  <li>Shipped a stateless Flask REST service for element detection in scientific figures with request validation and auth; persisted to Supabase MySQL using indexed schemas and connection pooling for high resiliency</li>
+                  <li>Integrated Swin Transformer + R-CNN for enhanced detection capabilities</li>
                 </ul>
               </div>
             <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg">
                 <h3 className="text-xl font-semibold mb-2">Software Development Intern</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-2">Astoria AI • Jan 2025 - Present</p>
+                <p className="text-gray-600 dark:text-gray-300 mb-2">Astoria AI | Jan 2025 - May 2025</p>
                 <ul className="list-disc list-inside text-gray-600 dark:text-gray-300">
-                  <li>Designed and optimized LLM-as-a-Judge evaluation pipeline for conversational AI</li>
-                  <li>Built scalable frontend modules for talent management platform</li>
+                  <li>Built an end-to-end full-stack AI app (career QA) by LoRA-fine-tuning GPT-4-distilled weights into Mistral-7B on AzureML vGPU nodes, regularized to balance accuracy and generalization</li>
+                  <li>Delivered responses via a Streamlit frontend using Langfuse and a Chain-of-Reasoning MCP for structuring prompts and evaluation, driving model performance to SOTA and ensuring reproducibility</li>
                 </ul>
               </div>
             <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg">
                 <h3 className="text-xl font-semibold mb-2">Deep Learning Research Intern</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-2">Thomas Jefferson University Hospital • Oct 2024 - Present</p>
+                <p className="text-gray-600 dark:text-gray-300 mb-2">Thomas Jefferson University Hospital | Oct 2024 - May 2025</p>
                 <ul className="list-disc list-inside text-gray-600 dark:text-gray-300">
-                  <li>Performed image segmentation on digital subtraction angiograms through neural networks</li>
-                  <li>Implemented vision transformer to predict risk of capillary abnormalities</li>
+                  <li>Engineered a modular frame-processing pipeline for a cerebral DSA classifier (47 runs), including frame resampling and U-Net fine-tuning, with strict schema validation and audit logging for clinical compliance</li>
+                  <li>Delivered ~92.5% accuracy in medical image analysis</li>
                 </ul>
               </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Clubs & Organizations Section */}
+      <section className="py-20 bg-white dark:bg-gray-900">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8 text-center">Clubs & Organizations</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
+              <h3 className="text-xl font-semibold mb-2">
+                <a href="https://pennclubs.com/club/aipenn/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">AI@Penn</a>
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-2">President</p>
+              <p className="text-gray-600 dark:text-gray-300">
+                Premier AI student organization at Penn, backed by the Raj and Neera Singh AI Program and the Wharton AI & Analytics Initiative. Dedicated to developing industry-level applications, research and incubating startups in Machine Learning, NLP, and Computer Vision.
+              </p>
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
+              <h3 className="text-xl font-semibold mb-2">
+                <a href="https://ai-analytics.wharton.upenn.edu/about/student-advisory-board/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Wharton AI Advisory Board</a>
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-2">Student Advisory Board Member</p>
+              <p className="text-gray-600 dark:text-gray-300">
+                Part of a diverse cohort of undergraduate and graduate students who take on leadership roles within their respective student clubs, gathering student feedback and fostering engagement in AI and analytics opportunities.
+              </p>
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
+              <h3 className="text-xl font-semibold mb-2">
+                <a href="https://enchord.wordpress.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Penn Enchord Acappella</a>
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-2">President</p>
+              <p className="text-gray-600 dark:text-gray-300">
+                Leading Penn's premier co-ed a cappella group, organizing performances, managing logistics, and fostering musical excellence within the university community.
+              </p>
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
+              <h3 className="text-xl font-semibold mb-2">
+                <a href="https://pennclubs.com/club/pennlabs/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Penn Labs</a>
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-2">Member</p>
+              <p className="text-gray-600 dark:text-gray-300">
+                Student-run software development organization that builds and maintains web applications for the Penn community, contributing to campus technology infrastructure.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -124,89 +178,87 @@ export default function Home() {
       <section className="py-20 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 text-center">Technical Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
-                <h3 className="text-xl font-semibold mb-2">Alziaid iOS App</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">Swift, React</p>
-                <p className="text-gray-600 dark:text-gray-300">
-                Led team of 4 to build a patient monitoring app with real-time health alerts; deployed for 100+ beta users.
-                </p>
-              </div>
-            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
-                <h3 className="text-xl font-semibold mb-2">MedScanner</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">React, AWS, BioBERT</p>
-                <p className="text-gray-600 dark:text-gray-300">
-                Full-stack app for drug dosage search and assistance; optimized AWS Lambda functions to handle 500+ daily queries.
-                </p>
-              </div>
-            
-            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
-                <h3 className="text-xl font-semibold mb-2">Plant Disease Detection</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">PyTorch, ResNet</p>
-                <p className="text-gray-600 dark:text-gray-300">
-                  Trained CNN model for leaf image classification (95% accuracy); can be integrated into open-source agriculture toolkit.
-                </p>
-              </div>
-            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
-                <h3 className="text-xl font-semibold mb-2">Finger Movement Prediction</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">Python, CuML, scikit-learn</p>
-                <p className="text-gray-600 dark:text-gray-300">
-                  Developed a multiscale high-γ/β feature extraction pipeline with GPU-accelerated Random Forests.
-                </p>
-              </div>
+          
+          {/* Top 2 Projects - Featured */}
+          {/* DiffusionArt Gen Studio */}
+          <div className="max-w-4xl mx-auto mb-12">
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg mb-6">
+              <h3 className="text-xl font-semibold mb-2">
+                <a href="https://github.com/hanshengzhu0001/diffusion_gen_studio" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">DiffusionArt Gen Studio</a>
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">Cloud, PyTorch, Agile, GenAI, CoreFlow, Sklearn, Distributed and Parallel System, Scalability</p>
+              <p className="text-gray-600 dark:text-gray-300">
+                Problem: device-aware multi-GPU text-to-image training in Python → Sol: integrated ml_mdm with torchrun (DDP) + config registries for device placement; orchestrated CoreFlow pipelines; packaged diffusion inference (Flask) on AWS Kubernetes (Horizontal Pod Autoscaling) and served a resilient REST endpoint behind AWS ALB, achieving p95 &lt; 5s @1024×1024/30.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+              <img src="/demos/diffusion-gen-studio/gif1-ezgif.com-video-to-gif-converter.gif" alt="DiffusionArt Gen Studio Demo 1" className="rounded-lg shadow-md" />
+              <img src="/demos/diffusion-gen-studio/gif2-ezgif.com-video-to-gif-converter.gif" alt="DiffusionArt Gen Studio Demo 2" className="rounded-lg shadow-md" />
+            </div>
           </div>
-          {/* SciChartVision Project - Individual Section */}
-          <div className="max-w-4xl mx-auto mt-10">
+
+          {/* SciChartVision */}
+          <div className="max-w-4xl mx-auto mb-12">
             <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg mb-6">
               <h3 className="text-xl font-semibold mb-2">
                 <a href="https://github.com/hanshengzhu0001/SciChartVision" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">SciChartVision</a>
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">AI/ML, VLM, Computer Vision, REST API, SQL, Git, HF Model Inference Endpoints Management</p>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">Computer Vision, RESTful APIs, MySQL, Git, HF Inference Endpoints, TCP/IP, 3D Generation, Linux, CI/CD</p>
               <p className="text-gray-600 dark:text-gray-300">
-                A Dense Captioning platform on Supabase that lets users select and annotate detected chart elements on scientific figures. Built a scientific chart detection model leveraging a Swin Transformer backbone with Mask R-CNN for small, dense data points and 21 other chart elements. <br/>
-                <span className="font-medium">Deployed application enables element selection during voiceover, boosting grounding and visual understanding.</span>
+                Modified a Cascade R-CNN baseline by adding a Swin Transformer backbone and window-size–aligned resolution crops, improving mAP@0.75 IoU from 0.031 → 0.581 (~18.7×) on small/dense elements in scientific figures. Problem: need of Text-to-3D editing → Sol: trained on Objaverse using SLURM-scheduled parallel jobs on Linux nodes. Problem: system reliability & testing rigor → Sol: automated CI/CD and an A/B test harness on a Dockerized HF Space.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
-              <img src="/demo 1.gif" alt="SciChartVision Demo 1" className="rounded-lg shadow-md" />
-              <img src="/demo 2.gif" alt="SciChartVision Demo 2" className="rounded-lg shadow-md" />
-              <img src="/demo 3.gif" alt="SciChartVision Demo 3" className="rounded-lg shadow-md" />
-              <img src="/demo 4.gif" alt="SciChartVision Demo 4" className="rounded-lg shadow-md" />
+              <img src="/demos/scichartvision/demo 1.gif" alt="SciChartVision Demo 1" className="rounded-lg shadow-md" />
+              <img src="/demos/scichartvision/demo 2.gif" alt="SciChartVision Demo 2" className="rounded-lg shadow-md" />
+              <img src="/demos/scichartvision/demo 3.gif" alt="SciChartVision Demo 3" className="rounded-lg shadow-md" />
+              <img src="/demos/scichartvision/demo 4.gif" alt="SciChartVision Demo 4" className="rounded-lg shadow-md" />
             </div>
           </div>
 
-          {/* Astoria Career App Project - New Card */}
-          <div className="max-w-4xl mx-auto mt-10">
-            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg mb-6">
-              <h3 className="text-xl font-semibold mb-2">Astoria Career App</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">Python, AzureML, Node.js, TypeScript, Docker, RESTful APIs, CI/CD</p>
+          {/* Other Projects Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
+              <h3 className="text-xl font-semibold mb-2">
+                <a href="https://github.com/hanshengzhu0001/Ethereum_Wallet_Java" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Ethereum Wallet in Java</a>
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">PostgreSQL, Java, Linux, Spring Boot, Infura, JavaFX, TCP/IP</p>
               <p className="text-gray-600 dark:text-gray-300">
-                Built a career Q&A and mock-interview platform on Kaggle data by LoRA‑finetuning GPT‑4‑distilled weights into Mistral‑7B on Azure ML. Refined responses with Langfuse structured prompts and delivered a Streamlit frontend.
+                Built Spring Boot backend for wallet creation/import and ETH/ERC-20 transfers; deployed on Linux with PostgreSQL. Applied JUnit testing & OOD principles; integrated Web3j + Infura, using Keccak256 hashing & ABI calls for integrity.
               </p>
             </div>
-            <div className="w-full aspect-video mb-10">
-              <iframe className="w-full h-full rounded-lg" src="https://www.youtube.com/embed/P_kau83ANCE" title="Astoria Career App Demo" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-            </div>
-          </div>
-
-          {/* Plant Disease Detection Project - New Card */}
-          <div className="max-w-4xl mx-auto mt-10">
-            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg mb-6">
-              <h3 className="text-xl font-semibold mb-2">Plant Disease Detection</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">PyTorch, ResNet</p>
+            
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
+              <h3 className="text-xl font-semibold mb-2">Banking System Platform</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">C++, Algorithms, Data Structures, Concurrency, CI/CD, Resiliency, Low-Latency Systems</p>
               <p className="text-gray-600 dark:text-gray-300">
-                Trained CNN model for leaf image classification (95% accuracy); can be integrated into open-source agriculture toolkit.
+                Built a distributed, TCP/IP client-server system (transfer, merges, payments) with lock-free queues and concurrency control. Added test automation, observability, and CI pipelines (YAML) for resiliency and low-latency under high throughput.
               </p>
             </div>
-          </div>
-
-          {/* Finger Movement Prediction Project - New Card */}
-          <div className="max-w-4xl mx-auto mt-10">
-            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg mb-6">
-              <h3 className="text-xl font-semibold mb-2">Finger Movement Prediction</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">Python, CuML, scikit-learn</p>
+            
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
+              <h3 className="text-xl font-semibold mb-2">Linked TED Talk Portal</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">Java, Apache Spark (RDD), AWS S3, Node.js, Pug/Bootstrap, DynamoDB</p>
               <p className="text-gray-600 dark:text-gray-300">
-                Developed a multiscale high-γ/β feature extraction pipeline with GPU-accelerated Random Forests.
+                Problem: Slow, single-node CSV ingest → Sol: Spark-ranked pipeline with parallel DynamoDB writes for fast lookups. Problem: Weak discovery context → Sol: Joined talks with a Twitter follower graph to add power related-talk navigation.
+              </p>
+            </div>
+            
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
+              <h3 className="text-xl font-semibold mb-2">
+                <a href="https://github.com/hanshengzhu0001/cuda-ray-tracer" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">CUDA Ray Tracer</a>
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">CUDA 12, C++, CMake, Nsight Systems/Compute, Thrust, Git, Linux, AWS g4dn/g5, RTX 4090</p>
+              <p className="text-gray-600 dark:text-gray-300">
+                Path tracer with SoA, multi-bounce BSDFs, progressive sampling, and Russian-roulette. Result: ~350 MRays/s @1080p. Problem: warp divergence & stalls. Sol: tuned 16×16 kernels, loop unroll, and early termination. Verified with Nsight.
+              </p>
+            </div>
+            
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
+              <h3 className="text-xl font-semibold mb-2">Romi Robot Autonomous Control</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">MATLAB, Simulink, Copilot, Kinematics, Sensor Fusion, Arduino, Model-based Design</p>
+              <p className="text-gray-600 dark:text-gray-300">
+                Engineered trajectory control (Bezier, pure pursuit) and obstacle avoidance with ODE kinematics + PID in Simulink; deployed to Arduino. Built a test harness with unit tests for code robustness; ran SIL/HIL sims; Git-validated.
               </p>
             </div>
           </div>

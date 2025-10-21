@@ -30,10 +30,26 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-xl text-gray-600 dark:text-gray-300 mb-8"
+              className="text-xl text-gray-600 dark:text-gray-300 mb-4"
             >
               AI Engineer & Researcher at UPenn
             </motion.p>
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="text-lg text-gray-600 dark:text-gray-300 mb-8 space-y-2"
+            >
+              <p>
+                <a href="https://pennclubs.com/club/aipenn/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">President of AI@Penn</a>
+              </p>
+              <p>
+                <a href="https://ai-analytics.wharton.upenn.edu/about/student-advisory-board/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Member of the Wharton AI Student Advisory Board</a>
+              </p>
+              <p>
+                <a href="https://enchord.wordpress.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">President of Penn Enchord Acappella</a>
+              </p>
+            </motion.div>
           </AnimatedSection>
           <AnimatedSection delay={0.4}>
             <motion.div 
@@ -76,7 +92,7 @@ export default function Home() {
                 <h3 className="text-xl font-semibold mb-2">University of Pennsylvania</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-2">School of Engineering and Applied Sciences</p>
                 <p className="text-gray-600 dark:text-gray-300 mb-2">Aug 2023 - May 2027</p>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">Candidate for Bachelor of Engineering in Computer Science • Cumulative GPA: 3.75</p>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">Candidate for Bachelor of Engineering in Computer Science</p>
                 <div className="mt-4">
                   <h4 className="font-semibold mb-2">Relevant Coursework:</h4>
                   <p className="text-gray-600 dark:text-gray-300">
@@ -88,7 +104,7 @@ export default function Home() {
                 <div className="mt-4">
                   <h4 className="font-semibold mb-2">Campus Involvement:</h4>
                   <p className="text-gray-600 dark:text-gray-300">
-                    AI@Penn (President), Wharton AI Advisory Board, Penn Enchord Acappella (President), Penn Labs
+                    AI@Penn (President), Wharton AI Advisory Board, Penn Enchord Acappella (President)
                   </p>
                 </div>
               </div>
@@ -159,15 +175,6 @@ export default function Home() {
               <p className="text-gray-600 dark:text-gray-300 mb-2">President</p>
               <p className="text-gray-600 dark:text-gray-300">
                 Leading Penn's premier co-ed a cappella group, organizing performances, managing logistics, and fostering musical excellence within the university community.
-              </p>
-            </div>
-            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
-              <h3 className="text-xl font-semibold mb-2">
-                <a href="https://pennclubs.com/club/pennlabs/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Penn Labs</a>
-              </h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-2">Member</p>
-              <p className="text-gray-600 dark:text-gray-300">
-                Student-run software development organization that builds and maintains web applications for the Penn community, contributing to campus technology infrastructure.
               </p>
             </div>
           </div>

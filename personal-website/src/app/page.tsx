@@ -201,6 +201,8 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
               <img src="/demos/diffusion-gen-studio/gif1-ezgif.com-video-to-gif-converter.gif" alt="DiffusionArt Gen Studio Demo 1" className="rounded-lg shadow-md" />
               <img src="/demos/diffusion-gen-studio/gif2-ezgif.com-video-to-gif-converter.gif" alt="DiffusionArt Gen Studio Demo 2" className="rounded-lg shadow-md" />
+              <img src="/demos/diffusion-gen-studio/gif3-ezgif.com-video-to-gif-converter.gif" alt="DiffusionArt Gen Studio Demo 3" className="rounded-lg shadow-md" />
+              <img src="/demos/diffusion-gen-studio/gif4-ezgif.com-video-to-gif-converter.gif" alt="DiffusionArt Gen Studio Demo 4" className="rounded-lg shadow-md" />
             </div>
           </div>
 

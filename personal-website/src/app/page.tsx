@@ -230,6 +230,9 @@ export default function Home() {
               <p className="text-gray-600 dark:text-gray-300">
                 Problem: Difficulty in learning 12,000+ MATLAB docs for .m programming → Sol: Built RAG pipeline with custom BGE embeddings, hybrid retrieval (dense + sparse), and CodeLlama integration; implemented batch processing for 170K+ chunks; deployed GPU-accelerated Flask API achieving sub-5-second query responses with semantic search accuracy.
               </p>
+              <div className="mt-4">
+                <img src="/demos/matlab-rag-assistant/demo 1.png" alt="MATLAB RAG Assistant Demo" className="rounded-lg shadow-md" />
+              </div>
             </div>
 
             <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">

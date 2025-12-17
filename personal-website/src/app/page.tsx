@@ -120,26 +120,23 @@ export default function Home() {
             <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg">
                 <h3 className="text-xl font-semibold mb-2">Penn Summer AI Lab Backend Engineer</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-2">University of Pennsylvania | May 2025 - Aug 2025</p>
-                <ul className="list-disc list-inside text-gray-600 dark:text-gray-300">
-                  <li>Shipped a stateless Flask REST service for element detection in scientific figures with request validation and auth; persisted to Supabase MySQL using indexed schemas and connection pooling for high resiliency</li>
-                  <li>Integrated Swin Transformer + R-CNN for enhanced detection capabilities</li>
-                </ul>
+                <p className="text-gray-600 dark:text-gray-300">
+                  For CVPR 2026, shipped a Flask REST service combining Swin and SAM 2 for segmentation/element detection in scientific figures; implemented request validation and indexed schemas with connection pooling in Supabase MySQL for high resiliency.
+                </p>
               </div>
             <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg">
                 <h3 className="text-xl font-semibold mb-2">Software Development Intern</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-2">Astoria AI | Jan 2025 - May 2025</p>
-                <ul className="list-disc list-inside text-gray-600 dark:text-gray-300">
-                  <li>Built an end-to-end full-stack AI app (career QA) by LoRA-fine-tuning GPT-4-distilled weights into Mistral-7B on AzureML vGPU nodes, regularized to balance accuracy and generalization</li>
-                  <li>Delivered responses via a Streamlit frontend using Langfuse and a Chain-of-Reasoning MCP for structuring prompts and evaluation, driving model performance to SOTA and ensuring reproducibility</li>
-                </ul>
+                <p className="text-gray-600 dark:text-gray-300">
+                  Built an full-stack AI app (career Q&amp;A) by LoRA-fine-tuning GPT-4-distilled weights into Mistral-7B transformer on Azure. Leveraged the Dedalus Labs Gateway to host MCP server and route queries to Claude evaluator for benchmarking. Delivered a customer-facing Streamlit frontend, used Langfuse for observability and Jenkins CI/CD for reliability in production, balanced ACC with generalization.
+                </p>
               </div>
             <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg">
                 <h3 className="text-xl font-semibold mb-2">Deep Learning Research Intern</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-2">Thomas Jefferson University Hospital | Oct 2024 - May 2025</p>
-                <ul className="list-disc list-inside text-gray-600 dark:text-gray-300">
-                  <li>Engineered a modular frame-processing pipeline for a cerebral DSA classifier (47 runs), including frame resampling and U-Net fine-tuning, with strict schema validation and audit logging for clinical compliance</li>
-                  <li>Delivered ~92.5% accuracy in medical image analysis</li>
-                </ul>
+                <p className="text-gray-600 dark:text-gray-300">
+                  Engineered a production-oriented, frame-processing pipeline for a cerebral DSA classifier (47 runs), including frame resampling and U-Net fine-tuning, with strict schema validation and audit logging for clinical compliance; delivered ~92.5% accuracy.
+                </p>
               </div>
           </div>
         </div>
@@ -193,9 +190,9 @@ export default function Home() {
               <h3 className="text-xl font-semibold mb-2">
                 <a href="https://github.com/hanshengzhu0001/diffusion_gen_studio" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">DiffusionArt Gen Studio</a>
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">Cloud, PyTorch, Agile, GenAI, CoreFlow, Sklearn, Distributed and Parallel System, Scalability</p>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">PyTorch, Matryoshka Diffusion Model, CoreFlow, Sklearn, Distributed and Parallel System</p>
               <p className="text-gray-600 dark:text-gray-300">
-                Problem: device-aware multi-GPU text-to-image training in Python → Sol: integrated ml_mdm with torchrun (DDP) + config registries for device placement; orchestrated CoreFlow pipelines; packaged diffusion inference (Flask) on AWS Kubernetes (Horizontal Pod Autoscaling) and served a resilient REST endpoint behind AWS ALB, achieving p95 &lt; 5s @1024×1024/30.
+                Prob: parallel text-to-image training on Apple silicon → Sol: integrated ml_mdm with config registries for device placement; packaged inference (Flask) on AWS Kubernetes (Horizontal Autoscaling), achieving p95&lt;80s @1024×1024/30 on CPU.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
@@ -212,9 +209,9 @@ export default function Home() {
               <h3 className="text-xl font-semibold mb-2">
                 <a href="https://github.com/hanshengzhu0001/SciChartVision" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">SciChartVision</a>
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">Computer Vision, RESTful APIs, MySQL, Git, HF Inference Endpoints, TCP/IP, 3D Generation, Linux, CI/CD</p>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">Computer Vision, Linux Shell Script, REST APIs, MySQL, Git, HF Inference Endpoint, TCP/IP, 3D Generation</p>
               <p className="text-gray-600 dark:text-gray-300">
-                Modified a Cascade R-CNN baseline by adding a Swin Transformer backbone and window-size–aligned resolution crops, improving mAP@0.75 IoU from 0.031 → 0.581 (~18.7×) on small/dense elements in scientific figures. Problem: need of Text-to-3D editing → Sol: trained on Objaverse using SLURM-scheduled parallel jobs on Linux nodes. Problem: system reliability & testing rigor → Sol: automated CI/CD and an A/B test harness on a Dockerized HF Space.
+                Integrated Cascade R-CNN baseline with Swin Transformer backbone and window-size–aligned resolution crops, using SLURM-scheduled training, improved mAP@0.75 IoU from 0.31 → 0.581 (1.87×) on small/dense elements in scientific figures. Problem: system reliability &amp; testing rigor → Sol: Automated deployment via Jenkins CI/CD to a Dockerized HF Space.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
@@ -228,21 +225,33 @@ export default function Home() {
           {/* Other Projects Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
+              <h3 className="text-xl font-semibold mb-2">MATLAB RAG Assistant</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">LangChain, ChromaDB, BGE Embeddings, CodeLlama, Ollama, RAG, Information Retrieval</p>
+              <p className="text-gray-600 dark:text-gray-300">
+                Problem: Difficulty in learning 12,000+ MATLAB docs for .m programming → Sol: Built RAG pipeline with custom BGE embeddings, hybrid retrieval (dense + sparse), and CodeLlama integration; implemented batch processing for 170K+ chunks; deployed GPU-accelerated Flask API achieving sub-5-second query responses with semantic search accuracy.
+              </p>
+            </div>
+
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
               <h3 className="text-xl font-semibold mb-2">
                 <a href="https://github.com/hanshengzhu0001/Ethereum_Wallet_Java" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Ethereum Wallet in Java</a>
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">PostgreSQL, Java, Linux, Spring Boot, Infura, JavaFX, TCP/IP</p>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">Crypto Transaction, TCP/IP, PostgreSQL, Java, Linux, Infura, JavaFX</p>
               <p className="text-gray-600 dark:text-gray-300">
-                Built Spring Boot backend for wallet creation/import and ETH/ERC-20 transfers; deployed on Linux with PostgreSQL. Applied JUnit testing & OOD principles; integrated Web3j + Infura, using Keccak256 hashing & ABI calls for integrity.
+                Built a secure Spring Boot backend for wallet creation/import and crypto transactions (ETH/ERC-20) on Sepolia testnet. Applied OOD principles and JUnit testing; integrated Web3j + Infura RPC for reliable blockchain communication. Ensured transaction integrity via Keccak256 hashing &amp; ABI encoding, managing nonce &amp; gas for secure signing and transfers.
               </p>
             </div>
             
             <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
               <h3 className="text-xl font-semibold mb-2">Banking System Platform</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">C++, Algorithms, Data Structures, Concurrency, CI/CD, Resiliency, Low-Latency Systems</p>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">C++, Financial Market Data, gRPC Microservices, PostgreSQL, Ensemble ML, A/B Testing</p>
               <p className="text-gray-600 dark:text-gray-300">
-                Built a distributed, TCP/IP client-server system (transfer, merges, payments) with lock-free queues and concurrency control. Added test automation, observability, and CI pipelines (YAML) for resiliency and low-latency under high throughput.
+                Built a distributed, TCP/IP client-server system (transfer, merges, payments) with lock-free queues and concurrency control. Set up PostgreSQL persistence, AI fraud detection, and CI pipelines (YAML) for resiliency &amp; efficiency under high throughput.
               </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <img src="/demos/banking-system/demo 1.png" alt="Banking System Demo 1" className="rounded-lg shadow-md" />
+                <img src="/demos/banking-system/demo 2.png" alt="Banking System Demo 2" className="rounded-lg shadow-md" />
+              </div>
             </div>
             
             <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
@@ -264,11 +273,14 @@ export default function Home() {
             </div>
             
             <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
-              <h3 className="text-xl font-semibold mb-2">Romi Robot Autonomous Control</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">MATLAB, Simulink, Copilot, Kinematics, Sensor Fusion, Arduino, Model-based Design</p>
+              <h3 className="text-xl font-semibold mb-2">Autonomous Robot with CV-assisted Localization</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">Reinforcement Learning (PPO), Arduino C++, OpenMV, Kalman Filter</p>
               <p className="text-gray-600 dark:text-gray-300">
-                Engineered trajectory control (Bezier, pure pursuit) and obstacle avoidance with ODE kinematics + PID in Simulink; deployed to Arduino. Built a test harness with unit tests for code robustness; ran SIL/HIL sims; Git-validated.
+                Built 6-DoF pose estimation and correction system; enhanced RRT path planning with a Proximal Policy Optimization agent for dynamic obstacle avoidance; reduced odometry drift by 5.5x by fusing wheel odometry with AprilTag vision.
               </p>
+              <div className="mt-4">
+                <img src="/demos/romi-robot/trajectory.png" alt="Autonomous Robot Trajectory Demo" className="rounded-lg shadow-md" />
+              </div>
             </div>
           </div>
         </div>

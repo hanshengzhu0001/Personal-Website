@@ -138,6 +138,19 @@ export default function Home() {
                   Engineered a production-oriented, frame-processing pipeline for a cerebral DSA classifier (47 runs), including frame resampling and U-Net fine-tuning, with strict schema validation and audit logging for clinical compliance; delivered ~92.5% accuracy.
                 </p>
               </div>
+            <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg">
+                <h3 className="text-xl font-semibold mb-2">ACEIB Educational Platform</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-2">Full-Stack EdTech, TypeScript/Vuetify, REST API, MongoDB, Matching Algorithm</p>
+                <p className="text-gray-600 dark:text-gray-300">
+                  Prob: Optimizing admissions and mentorship pairings for efficiency &amp; outcomes. Sol: Built a full-stack platform (REST API, MongoDB) featuring a weighted multi-attribute matching algorithm, conflict mediation, real-time chat, and a streak calendar.
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                  <img src="/demos/aceib-educational-platform/demo 1.png" alt="ACEIB Educational Platform Demo 1" className="rounded-lg shadow-md" />
+                  <img src="/demos/aceib-educational-platform/demo 2.png" alt="ACEIB Educational Platform Demo 2" className="rounded-lg shadow-md" />
+                  <img src="/demos/aceib-educational-platform/demo 3.png" alt="ACEIB Educational Platform Demo 3" className="rounded-lg shadow-md" />
+                  <img src="/demos/aceib-educational-platform/demo 4.png" alt="ACEIB Educational Platform Demo 4" className="rounded-lg shadow-md" />
+                </div>
+              </div>
           </div>
         </div>
       </section>

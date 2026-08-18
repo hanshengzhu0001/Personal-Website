@@ -1,7 +1,9 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
+# No leading slash on these: the app lives in personal-website/, so a
+# root-anchored pattern silently matches nothing.
+node_modules/
 /.pnp
 .pnp.*
 .yarn/*
@@ -14,8 +16,11 @@
 /coverage
 
 # next.js
-/.next/
-/out/
+# Build output. Vercel rebuilds from source on every deployment, so these were
+# never needed in the repository; they were tracked only because /.next/ and
+# /out/ are anchored to the repository root and the app is one level down.
+.next/
+out/
 
 # production
 /build
@@ -39,4 +44,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-personal-website/node_modules/

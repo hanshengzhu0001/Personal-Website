@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { EnvelopeIcon, PhoneIcon, GlobeAltIcon } from '@heroicons/react/24/outline';
 import CosmicBackground from '../components/CosmicBackground';
 import PhotoGallery from '../components/PhotoGallery';
+import LumenariumFeature from '../components/LumenariumFeature';
 import { AnimatedSection } from '../components/AnimatedSection';
 
 export default function Home() {
@@ -82,6 +83,10 @@ export default function Home() {
           </AnimatedSection>
         </div>
       </section>
+
+      {/* Featured Research: Lumenarium (kept directly under the hero so it is the
+          first thing a reader sees after the introduction) */}
+      <LumenariumFeature />
 
       {/* Education Section */}
       <section className="py-20 bg-white dark:bg-gray-900">
@@ -306,13 +311,57 @@ export default function Home() {
       <section className="py-20 bg-gray-50 dark:bg-gray-800">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 text-center">Current Research</h2>
-          <div className="max-w-3xl mx-auto">
-            <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg">
-                <p className="text-gray-600 dark:text-gray-300">
-                Working with Professor Chris Callison-Burch on building on MOLMO - a family of open state-of-the-art multimodal AI models - 
-                applying dense audio captioning and combining ViT-based image encoding with LLM-based decoding.
-                </p>
+          <div className="max-w-3xl mx-auto space-y-6">
+            <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg border-l-4 border-emerald-400">
+              <div className="flex flex-wrap items-center gap-2 mb-2">
+                <h3 className="text-xl font-semibold">Lumenarium</h3>
+                <span className="inline-flex items-center rounded-full bg-emerald-500/10 px-2.5 py-0.5 text-xs font-semibold uppercase tracking-wider text-emerald-700 dark:text-emerald-300 ring-1 ring-emerald-500/40">
+                  NeurIPS
+                </span>
               </div>
+              <p className="text-gray-600 dark:text-gray-300 mb-3">
+                First-author work on proof-carrying 3D scene generation: turning a single indoor
+                photograph into a scene a technical artist can actually open and edit. The core idea
+                is to stop treating a model&apos;s output as a conclusion. Every geometric edit must
+                present physical evidence &mdash; mesh-level collision, declared support contact,
+                centre-of-mass stability and family-level non-regression &mdash; before it is
+                committed, and anything the pipeline cannot observe is reported as unresolved rather
+                than scored as success. Paper in preparation.
+              </p>
+              <div className="flex flex-wrap gap-3 text-sm">
+                <a
+                  href="https://hanshengzhu0001.github.io/Lumenarium/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline"
+                >
+                  Project page
+                </a>
+                <a
+                  href="https://github.com/hanshengzhu0001/Lumenarium"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline"
+                >
+                  GitHub
+                </a>
+                <a
+                  href="https://embedding.lightart.qq.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline"
+                >
+                  Hosted system
+                </a>
+              </div>
+            </div>
+            <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg">
+              <h3 className="text-lg font-semibold mb-2">Multimodal models</h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                Working with Professor Chris Callison-Burch on building on MOLMO - a family of open state-of-the-art multimodal AI models -
+                applying dense audio captioning and combining ViT-based image encoding with LLM-based decoding.
+              </p>
+            </div>
           </div>
         </div>
       </section>

@@ -12,8 +12,10 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <CosmicBackground />
-      {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-gray-800">
+      {/* Hero Section. In dark mode the surface is translucent so the starfield
+          behind it stays visible; every later section keeps an opaque
+          background, which is what guarantees the stars never sit under text. */}
+      <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-white to-gray-100 dark:from-gray-900/70 dark:to-gray-800/70">
         <div className="container mx-auto px-4 py-16 text-center">
           <AnimatedSection>
             <img src="/profile_pic.jpeg" alt="Profile" className="mx-auto rounded-full w-40 h-40 object-cover mb-6 shadow-lg" />
@@ -122,6 +124,13 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 text-center">Work Experience</h2>
           <div className="max-w-3xl mx-auto space-y-6">
+            <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg">
+                <h3 className="text-xl font-semibold mb-2">3D Vision Research Intern</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-2">Tencent | May 2026 - Aug 2026</p>
+                <p className="text-gray-600 dark:text-gray-300">
+                  Built <a href="https://github.com/hanshengzhu0001/Lumenarium" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Lumenarium</a>, a single-image-to-editable-3D scene layout system. Replaced 5,000-step simulated annealing with SceneLM, a relation-conditioned Levenberg&ndash;Marquardt solver over independent SO(3) tangent blocks and support/plane translation charts, paired with SceneProof executable certificates that gate every component-wise commit on physical witnesses, Jacobian-ownership audits and non-inferiority before scoped rollback. Cut the refinement stage from 677.8s to 192.9s per scene (3.51x) and raised physical realizability from 54.58% to 62.10% on a 30-scene benchmark while holding upstream pose metrics fixed; shipped as a dual-A10 FastAPI service with Fast/Medium/Best delivery profiles. First-author paper in preparation for NeurIPS.
+                </p>
+              </div>
             <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg">
                 <h3 className="text-xl font-semibold mb-2">Penn Summer AI Lab Backend Engineer</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-2">University of Pennsylvania | May 2025 - Aug 2025</p>

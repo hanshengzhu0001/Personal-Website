@@ -20,11 +20,21 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
+/*
+ * The page gradient lives on `html`, not on `body`, so the starfield canvas can
+ * sit on a negative layer and still be visible. A negative z-index paints above
+ * the root background but below the background of every block-level descendant,
+ * so keeping the gradient on `body` would occlude the canvas entirely.
+ */
+html {
   background: linear-gradient(
     to bottom,
     rgb(var(--background-start-rgb)),
     rgb(var(--background-end-rgb))
   );
-} 
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: transparent;
+}
